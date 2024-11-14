@@ -1,0 +1,86 @@
+body
+{
+    background-color: rgb(140, 141, 180);
+    background:url(./Images/Screenshot\ \(339\).png);
+    /* background: cent; */
+    height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*
+{
+ margin: 0;
+ padding: 0;
+}
+
+.accordian
+{
+    width:60%;
+    padding:30px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.title
+{
+    text-align: center;
+    margin-top:2vh;
+    margin-bottom: 2vh;
+}
+
+.content-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.question
+{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid salmon;
+    border-bottom: 1px solid salmon;
+    width: 100%;
+    cursor: pointer;
+    transition: 3s;
+}
+.question:hover
+{
+    background-color: salmon;
+}
+
+.question::after
+{
+    content:'+';
+    position:absolute;
+    right:20vw;
+}
+.ans
+{
+    font-size: 2vh;
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    transition: .5s;
+}
+
+.ans.reveal
+{
+    /* display: block; */
+    height: 60px;
+}
+
+.question.reveal::after
+{
+    content: "-";
+    font-size: 5vh;
+    position:absolute;
+    right:20vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}

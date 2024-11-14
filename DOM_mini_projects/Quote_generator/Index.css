@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 1px solid red; */
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    text-align: center;
+    background:url(./Images/Background.jpeg) no-repeat center center/ cover;
+    transition: 1s;
+}
+
+#container
+{
+    border: 3px black solid;
+    border-radius: 2px;
+    /* margin-top: 10vh; */
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 8vh; */
+    width: 70%; 
+    /* max-height: 30vh; */
+}
+
+#body
+{
+    /* border: red 1px solid; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 0vh;
+    align-items: center;
+    /* background-color: rgb(212, 223, 210); */
+    
+    /* height: 40vh; */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#header
+{
+    color: rgb(92, 6, 6);
+    border-bottom: 3px black solid ;    
+    border-radius: 2px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+#textarea
+{
+    font-size:1rem;
+    line-height: 1rem;
+    font-weight: 800;
+}
+
+#person
+{
+    font-size: 1.3rem;
+    color: rgb(13, 52, 97);
+    font-weight: 600;
+}
+#buttonarea
+{
+    margin-top: 5vh;
+    width: 19vw;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid salmon; */
+}
+
+button
+{
+    font-weight: 900;
+    background-color: white;
+    border: none;
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 100%;
+    color:rgb(92, 6, 6);
+    transition: 1s;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: rgb(92, 6, 6);
+    color: white;
+}
